@@ -75,14 +75,6 @@
     [self addGestureRecognizersToCanvas:self.canvas];
 }
 
-- (void) viewDidUnload
-{
-    [self setCanvas:nil];
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-    
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -92,16 +84,6 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-
-- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    if ( UIInterfaceOrientationIsLandscape(interfaceOrientation) ) {
-        return YES;
-    }
-    
-    return NO;
-}
 
 
 #pragma mark - Data Loading

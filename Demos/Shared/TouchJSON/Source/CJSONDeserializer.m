@@ -923,6 +923,7 @@ typedef struct
 
 #pragma mark -
 
+/*
 inline static BOOL _PtrRangeContainsCharacter(PtrRange inPtrRange, char C)
     {
     char *P = inPtrRange.location;
@@ -935,7 +936,7 @@ inline static BOOL _PtrRangeContainsCharacter(PtrRange inPtrRange, char C)
         }
     return (NO);
     }
-
+*/
 inline static char *_SkipWhiteSpace(char *_current, char *_end)
     {
     char *P;
