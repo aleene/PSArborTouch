@@ -64,10 +64,8 @@
 		4F4D9FFC1439DCBC00AAB205 /* Halfviz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Halfviz-Prefix.pch"; sourceTree = "<group>"; };
 		4F4D9FFD1439DCBC00AAB205 /* HalfvizAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HalfvizAppDelegate.h; sourceTree = "<group>"; };
 		4F4D9FFE1439DCBC00AAB205 /* HalfvizAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HalfvizAppDelegate.m; sourceTree = "<group>"; };
-		4F4DA0011439DCBC00AAB205 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		4F4DA0031439DCBC00AAB205 /* HalfvizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HalfvizViewController.h; sourceTree = "<group>"; };
 		4F4DA0041439DCBC00AAB205 /* HalfvizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HalfvizViewController.m; sourceTree = "<group>"; };
-		4F4DA0071439DCBC00AAB205 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HalfvizViewController.xib; sourceTree = "<group>"; };
 		4F4DA0121439DD4100AAB205 /* ATEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATEdge.h; sourceTree = "<group>"; };
 		4F4DA0131439DD4200AAB205 /* ATEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATEdge.m; sourceTree = "<group>"; };
 		4F4DA0141439DD4200AAB205 /* ATNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATNode.h; sourceTree = "<group>"; };
@@ -117,6 +115,8 @@
 		4F4DA0CB1439E1D300AAB205 /* the-mystery-of-ura-senke.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "the-mystery-of-ura-senke.json"; sourceTree = "<group>"; };
 		4F4DA0CC1439E1D300AAB205 /* third-planet-from-altair.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "third-planet-from-altair.json"; sourceTree = "<group>"; };
 		4F4DA0CD1439E1D300AAB205 /* toc.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = toc.json; sourceTree = "<group>"; };
+		51F0FBFA2443459300234C2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		51F0FBFB2443459300234C2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HalfvizViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -366,15 +366,21 @@
 		4F4D9FE11439DCBC00AAB205 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Preston Software";
+				TargetAttributes = {
+					4F4D9FE91439DCBC00AAB205 = {
+						DevelopmentTeam = Q4FXMVWJ7V;
+					};
+				};
 			};
 			buildConfigurationList = 4F4D9FE41439DCBC00AAB205 /* Build configuration list for PBXProject "Halfviz" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 4F4D9FDF1439DCBC00AAB205;
 			productRefGroup = 4F4D9FEB1439DCBC00AAB205 /* Products */;
@@ -459,7 +465,7 @@
 		4F4DA0001439DCBC00AAB205 /* MainWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4F4DA0011439DCBC00AAB205 /* en */,
+				51F0FBFA2443459300234C2E /* Base */,
 			);
 			name = MainWindow.xib;
 			sourceTree = "<group>";
@@ -467,7 +473,7 @@
 		4F4DA0061439DCBC00AAB205 /* HalfvizViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4F4DA0071439DCBC00AAB205 /* en */,
+				51F0FBFB2443459300234C2E /* Base */,
 			);
 			name = HalfvizViewController.xib;
 			sourceTree = "<group>";
@@ -479,17 +485,31 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -514,15 +534,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -543,6 +577,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				DEVELOPMENT_TEAM = Q4FXMVWJ7V;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Halfviz/Halfviz-Prefix.pch";
 				INFOPLIST_FILE = "Halfviz/Halfviz-Info.plist";
@@ -556,6 +591,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				DEVELOPMENT_TEAM = Q4FXMVWJ7V;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Halfviz/Halfviz-Prefix.pch";
 				INFOPLIST_FILE = "Halfviz/Halfviz-Info.plist";
