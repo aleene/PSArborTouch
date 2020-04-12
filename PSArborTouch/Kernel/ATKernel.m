@@ -118,14 +118,14 @@
             //      - Energy in the simulation
             //      - Bounds of the simulation
             
-            ATEnergy *currentEnergy = _physics.energy;
+            ATEnergy *currentEnergy = self->_physics.energy;
             
-            _simulationEnergy.sum     = currentEnergy.sum;
-            _simulationEnergy.max     = currentEnergy.max;
-            _simulationEnergy.mean    = currentEnergy.mean;
-            _simulationEnergy.count   = currentEnergy.count;
+            self->_simulationEnergy.sum     = currentEnergy.sum;
+            self->_simulationEnergy.max     = currentEnergy.max;
+            self->_simulationEnergy.mean    = currentEnergy.mean;
+            self->_simulationEnergy.count   = currentEnergy.count;
             
-            _simulationBounds         = _physics.bounds;
+            self->_simulationBounds         = self->_physics.bounds;
             
             
             // Call back into the main thread
@@ -201,12 +201,12 @@
     
     dispatch_async( [self physicsQueue] , ^{
         
-        _physics.repulsion  = params.repulsion;
-        _physics.stiffness  = params.stiffness;
-        _physics.friction   = params.friction;
-        _physics.deltaTime  = params.deltaTime;
-        _physics.gravity    = params.gravity;
-        _physics.theta      = params.precision;
+        self->_physics.repulsion  = params.repulsion;
+        self->_physics.stiffness  = params.stiffness;
+        self->_physics.friction   = params.friction;
+        self->_physics.deltaTime  = params.deltaTime;
+        self->_physics.gravity    = params.gravity;
+        self->_physics.theta      = params.precision;
         
         // params.timeout;  // Used by kernel to control update cycle
         
@@ -221,7 +221,7 @@
     
     dispatch_async( [self physicsQueue] , ^{
         
-        [_physics addParticle:particle];
+        [self->_physics addParticle:particle];
 
         // start, unpaused NO
     });
@@ -234,7 +234,7 @@
     
     dispatch_async( [self physicsQueue] , ^{
         
-        [_physics removeParticle:particle];
+        [self->_physics removeParticle:particle];
         
         // start, unpaused NO
     });
@@ -247,7 +247,7 @@
     
     dispatch_async( [self physicsQueue] , ^{
         
-        [_physics addSpring:spring];
+        [self->_physics addSpring:spring];
         
         // start, unpaused NO
     });
@@ -260,7 +260,7 @@
     
     dispatch_async( [self physicsQueue] , ^{
         
-        [_physics removeSpring:spring];
+        [self->_physics removeSpring:spring];
         
         // start, unpaused NO
     });

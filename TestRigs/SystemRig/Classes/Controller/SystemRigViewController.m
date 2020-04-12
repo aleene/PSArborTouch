@@ -68,11 +68,13 @@
     [self.debugView addGestureRecognizer:panGesture];
 }
 
+/*
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for landscape orientations
     return UIInterfaceOrientationIsLandscape(interfaceOrientation);
 }
+ */
 
 
 #pragma mark - Interface Actions
