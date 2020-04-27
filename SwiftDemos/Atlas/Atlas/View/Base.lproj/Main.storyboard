@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Atlas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Atlas" translatesAutoresizingMaskIntoConstraints="NO" id="JjL-T0-Iik">
+                                <rect key="frame" x="20" y="44" width="60" height="30"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="United States" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTz-OB-Bnl">
+                                <rect key="frame" x="88" y="56" width="93" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Africa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqD-oJ-IBR">
+                                <rect key="frame" x="189" y="56" width="40" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMc-6j-nQk">
+                                <rect key="frame" x="237" y="56" width="29" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yuf-dl-l3t" userLabel="Canvas" customClass="AtlasCanvasView" customModule="Atlas" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="82" width="414" height="772"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yuf-dl-l3t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="11W-2a-K1h"/>
+                            <constraint firstItem="bTz-OB-Bnl" firstAttribute="leading" secondItem="JjL-T0-Iik" secondAttribute="trailing" constant="8" id="JuF-FW-laV"/>
+                            <constraint firstItem="bTz-OB-Bnl" firstAttribute="centerY" secondItem="zqD-oJ-IBR" secondAttribute="centerY" id="Tx0-az-qnE"/>
+                            <constraint firstItem="cMc-6j-nQk" firstAttribute="leading" secondItem="zqD-oJ-IBR" secondAttribute="trailing" constant="8" id="WBL-wN-HXo"/>
+                            <constraint firstItem="yuf-dl-l3t" firstAttribute="top" secondItem="JjL-T0-Iik" secondAttribute="bottom" constant="8" id="Weg-Lq-RXB"/>
+                            <constraint firstItem="yuf-dl-l3t" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YeG-Bv-auM"/>
+                            <constraint firstItem="JjL-T0-Iik" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cMZ-Ad-Uxf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yuf-dl-l3t" secondAttribute="bottom" constant="8" id="eAr-rm-amd"/>
+                            <constraint firstItem="JjL-T0-Iik" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="glw-ZF-56h"/>
+                            <constraint firstItem="JjL-T0-Iik" firstAttribute="bottom" secondItem="bTz-OB-Bnl" secondAttribute="bottom" id="kDE-vU-7do"/>
+                            <constraint firstItem="zqD-oJ-IBR" firstAttribute="centerY" secondItem="cMc-6j-nQk" secondAttribute="centerY" id="snV-sR-Obe"/>
+                            <constraint firstItem="zqD-oJ-IBR" firstAttribute="leading" secondItem="bTz-OB-Bnl" secondAttribute="trailing" constant="8" id="vi3-X3-ZeC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="atlasCanvasView" destination="yuf-dl-l3t" id="aYJ-eR-js8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Atlas" width="60" height="30"/>
+    </resources>
+</document>
