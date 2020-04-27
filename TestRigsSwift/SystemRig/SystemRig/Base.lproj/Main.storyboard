@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--System Rig View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SystemRigViewController" customModule="SystemRig" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MDw-XP-gPG" customClass="ATSystemDebugView" customModule="SystemRig" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eI-vf-uam">
+                                        <rect key="frame" x="376" y="8" width="30" height="30"/>
+                                        <state key="normal" title="GO!"/>
+                                        <connections>
+                                            <action selector="goButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vR8-ty-Qoz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTj-ih-Qj9">
+                                        <rect key="frame" x="370.5" y="46" width="41" height="30"/>
+                                        <state key="normal" title="Prune"/>
+                                        <connections>
+                                            <action selector="pruneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ed1-fr-kat"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="541-rN-oXy">
+                                        <rect key="frame" x="376" y="84" width="30" height="30"/>
+                                        <state key="normal" title="Add"/>
+                                        <connections>
+                                            <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G4S-hN-Bbx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="sTj-ih-Qj9" firstAttribute="centerX" secondItem="7eI-vf-uam" secondAttribute="centerX" id="MSb-uN-QV4"/>
+                                    <constraint firstItem="541-rN-oXy" firstAttribute="top" secondItem="sTj-ih-Qj9" secondAttribute="bottom" constant="8" id="ctb-ki-ryL"/>
+                                    <constraint firstItem="541-rN-oXy" firstAttribute="centerX" secondItem="sTj-ih-Qj9" secondAttribute="centerX" id="rIR-Gh-6Ca"/>
+                                    <constraint firstItem="7eI-vf-uam" firstAttribute="top" secondItem="MDw-XP-gPG" secondAttribute="topMargin" id="tYg-2t-zVk"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="7eI-vf-uam" secondAttribute="trailing" id="vS7-CN-gbp"/>
+                                    <constraint firstItem="sTj-ih-Qj9" firstAttribute="top" secondItem="7eI-vf-uam" secondAttribute="bottom" constant="8" id="yND-5c-s0o"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MDw-XP-gPG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5vX-1K-NV6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MDw-XP-gPG" secondAttribute="bottom" id="9t0-LN-By9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MDw-XP-gPG" secondAttribute="trailing" id="KmM-Y8-y4j"/>
+                            <constraint firstItem="MDw-XP-gPG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lqQ-Qp-aQH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="debugView" destination="MDw-XP-gPG" id="qZR-eW-7lT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="139"/>
+        </scene>
+    </scenes>
+</document>

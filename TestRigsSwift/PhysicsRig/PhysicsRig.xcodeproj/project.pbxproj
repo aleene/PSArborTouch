@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5117B11C24459A4500E4A7C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B11B24459A4500E4A7C0 /* AppDelegate.swift */; };
+		5117B11E24459A4500E4A7C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B11D24459A4500E4A7C0 /* SceneDelegate.swift */; };
+		5117B12024459A4500E4A7C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B11F24459A4500E4A7C0 /* ViewController.swift */; };
+		5117B12324459A4500E4A7C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5117B12124459A4500E4A7C0 /* Main.storyboard */; };
+		5117B12524459A5100E4A7C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5117B12424459A5100E4A7C0 /* Assets.xcassets */; };
+		5117B12824459A5100E4A7C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5117B12624459A5100E4A7C0 /* LaunchScreen.storyboard */; };
+		5117B13324459A5200E4A7C0 /* PhysicsRigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B13224459A5200E4A7C0 /* PhysicsRigTests.swift */; };
+		5117B1472446261600E4A7C0 /* ATEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B1442446261600E4A7C0 /* ATEdge.swift */; };
+		5117B1482446261600E4A7C0 /* UniqueCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B1452446261600E4A7C0 /* UniqueCount.swift */; };
+		5117B1492446261600E4A7C0 /* ATNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B1462446261600E4A7C0 /* ATNode.swift */; };
+		5117B14F2446262800E4A7C0 /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B14A2446262800E4A7C0 /* CGRectExtension.swift */; };
+		5117B1502446262800E4A7C0 /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B14B2446262800E4A7C0 /* CGSizeExtension.swift */; };
+		5117B1512446262800E4A7C0 /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B14C2446262800E4A7C0 /* CGPointExtension.swift */; };
+		5117B1522446262800E4A7C0 /* CoreGraphicsOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B14D2446262800E4A7C0 /* CoreGraphicsOperators.swift */; };
+		5117B1532446262800E4A7C0 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B14E2446262800E4A7C0 /* Line.swift */; };
+		5117B1572446263E00E4A7C0 /* ATBarnesHutTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B1542446263E00E4A7C0 /* ATBarnesHutTree.swift */; };
+		5117B1582446263E00E4A7C0 /* ATBarnesHutNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B1552446263E00E4A7C0 /* ATBarnesHutNode.swift */; };
+		5117B1592446263E00E4A7C0 /* ATBarnesHutBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B1562446263E00E4A7C0 /* ATBarnesHutBranch.swift */; };
+		5117B15E2446264B00E4A7C0 /* ATSpring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B15A2446264B00E4A7C0 /* ATSpring.swift */; };
+		5117B15F2446264B00E4A7C0 /* ATParticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B15B2446264B00E4A7C0 /* ATParticle.swift */; };
+		5117B1602446264B00E4A7C0 /* ATEnergy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B15C2446264B00E4A7C0 /* ATEnergy.swift */; };
+		5117B1612446264B00E4A7C0 /* ATPhysics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B15D2446264B00E4A7C0 /* ATPhysics.swift */; };
+		5117B1662446265900E4A7C0 /* ATSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B1622446265800E4A7C0 /* ATSystem.swift */; };
+		5117B1672446265900E4A7C0 /* ATSystemRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B1632446265800E4A7C0 /* ATSystemRenderer.swift */; };
+		5117B1682446265900E4A7C0 /* ATSystemState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B1642446265900E4A7C0 /* ATSystemState.swift */; };
+		5117B1692446265900E4A7C0 /* ATSystemParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B1652446265900E4A7C0 /* ATSystemParams.swift */; };
+		5117B16B24462ADF00E4A7C0 /* ATPhysicsDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B16A24462ADF00E4A7C0 /* ATPhysicsDebugView.swift */; };
+		5117B1702447281000E4A7C0 /* ATKernel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117B16F2447281000E4A7C0 /* ATKernel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5117B12F24459A5200E4A7C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5117B11024459A4500E4A7C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5117B11724459A4500E4A7C0;
+			remoteInfo = PhysicsRig;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5117B11824459A4500E4A7C0 /* PhysicsRig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysicsRig.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5117B11B24459A4500E4A7C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5117B11D24459A4500E4A7C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5117B11F24459A4500E4A7C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5117B12224459A4500E4A7C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5117B12424459A5100E4A7C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5117B12724459A5100E4A7C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5117B12924459A5100E4A7C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5117B12E24459A5100E4A7C0 /* PhysicsRigTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhysicsRigTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5117B13224459A5200E4A7C0 /* PhysicsRigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsRigTests.swift; sourceTree = "<group>"; };
+		5117B13424459A5200E4A7C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5117B1442446261600E4A7C0 /* ATEdge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATEdge.swift; path = ../../PSArborTouchSwift/Atoms/ATEdge.swift; sourceTree = "<group>"; };
+		5117B1452446261600E4A7C0 /* UniqueCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UniqueCount.swift; path = ../../PSArborTouchSwift/Atoms/UniqueCount.swift; sourceTree = "<group>"; };
+		5117B1462446261600E4A7C0 /* ATNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATNode.swift; path = ../../PSArborTouchSwift/Atoms/ATNode.swift; sourceTree = "<group>"; };
+		5117B14A2446262800E4A7C0 /* CGRectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGRectExtension.swift; path = ../../PSArborTouchSwift/ATSupport/CGRectExtension.swift; sourceTree = "<group>"; };
+		5117B14B2446262800E4A7C0 /* CGSizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGSizeExtension.swift; path = ../../PSArborTouchSwift/ATSupport/CGSizeExtension.swift; sourceTree = "<group>"; };
+		5117B14C2446262800E4A7C0 /* CGPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGPointExtension.swift; path = ../../PSArborTouchSwift/ATSupport/CGPointExtension.swift; sourceTree = "<group>"; };
+		5117B14D2446262800E4A7C0 /* CoreGraphicsOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreGraphicsOperators.swift; path = ../../PSArborTouchSwift/ATSupport/CoreGraphicsOperators.swift; sourceTree = "<group>"; };
+		5117B14E2446262800E4A7C0 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Line.swift; path = ../../PSArborTouchSwift/ATSupport/Line.swift; sourceTree = "<group>"; };
+		5117B1542446263E00E4A7C0 /* ATBarnesHutTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATBarnesHutTree.swift; path = "../../PSArborTouchSwift/Barnes-Hut/ATBarnesHutTree.swift"; sourceTree = "<group>"; };
+		5117B1552446263E00E4A7C0 /* ATBarnesHutNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATBarnesHutNode.swift; path = "../../PSArborTouchSwift/Barnes-Hut/ATBarnesHutNode.swift"; sourceTree = "<group>"; };
+		5117B1562446263E00E4A7C0 /* ATBarnesHutBranch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATBarnesHutBranch.swift; path = "../../PSArborTouchSwift/Barnes-Hut/ATBarnesHutBranch.swift"; sourceTree = "<group>"; };
+		5117B15A2446264B00E4A7C0 /* ATSpring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATSpring.swift; path = ../../PSArborTouchSwift/Physics/ATSpring.swift; sourceTree = "<group>"; };
+		5117B15B2446264B00E4A7C0 /* ATParticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATParticle.swift; path = ../../PSArborTouchSwift/Physics/ATParticle.swift; sourceTree = "<group>"; };
+		5117B15C2446264B00E4A7C0 /* ATEnergy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATEnergy.swift; path = ../../PSArborTouchSwift/Physics/ATEnergy.swift; sourceTree = "<group>"; };
+		5117B15D2446264B00E4A7C0 /* ATPhysics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATPhysics.swift; path = ../../PSArborTouchSwift/Physics/ATPhysics.swift; sourceTree = "<group>"; };
+		5117B1622446265800E4A7C0 /* ATSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATSystem.swift; path = ../../PSArborTouchSwift/System/ATSystem.swift; sourceTree = "<group>"; };
+		5117B1632446265800E4A7C0 /* ATSystemRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATSystemRenderer.swift; path = ../../PSArborTouchSwift/System/ATSystemRenderer.swift; sourceTree = "<group>"; };
+		5117B1642446265900E4A7C0 /* ATSystemState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATSystemState.swift; path = ../../PSArborTouchSwift/System/ATSystemState.swift; sourceTree = "<group>"; };
+		5117B1652446265900E4A7C0 /* ATSystemParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATSystemParams.swift; path = ../../PSArborTouchSwift/System/ATSystemParams.swift; sourceTree = "<group>"; };
+		5117B16A24462ADF00E4A7C0 /* ATPhysicsDebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATPhysicsDebugView.swift; sourceTree = "<group>"; };
+		5117B16F2447281000E4A7C0 /* ATKernel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ATKernel.swift; path = ../../PSArborTouchSwift/ATKernel/ATKernel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5117B11524459A4500E4A7C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5117B12B24459A5100E4A7C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5117B10F24459A4500E4A7C0 = {
+			isa = PBXGroup;
+			children = (
+				5117B13E2446258A00E4A7C0 /* PSArborTouchSwift */,
+				5117B11A24459A4500E4A7C0 /* PhysicsRig */,
+				5117B13124459A5200E4A7C0 /* PhysicsRigTests */,
+				5117B11924459A4500E4A7C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5117B11924459A4500E4A7C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5117B11824459A4500E4A7C0 /* PhysicsRig.app */,
+				5117B12E24459A5100E4A7C0 /* PhysicsRigTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5117B11A24459A4500E4A7C0 /* PhysicsRig */ = {
+			isa = PBXGroup;
+			children = (
+				5117B11B24459A4500E4A7C0 /* AppDelegate.swift */,
+				5117B11D24459A4500E4A7C0 /* SceneDelegate.swift */,
+				5117B11F24459A4500E4A7C0 /* ViewController.swift */,
+				5117B16A24462ADF00E4A7C0 /* ATPhysicsDebugView.swift */,
+				5117B12124459A4500E4A7C0 /* Main.storyboard */,
+				5117B12424459A5100E4A7C0 /* Assets.xcassets */,
+				5117B12624459A5100E4A7C0 /* LaunchScreen.storyboard */,
+				5117B12924459A5100E4A7C0 /* Info.plist */,
+			);
+			path = PhysicsRig;
+			sourceTree = "<group>";
+		};
+		5117B13124459A5200E4A7C0 /* PhysicsRigTests */ = {
+			isa = PBXGroup;
+			children = (
+				5117B13224459A5200E4A7C0 /* PhysicsRigTests.swift */,
+				5117B13424459A5200E4A7C0 /* Info.plist */,
+			);
+			path = PhysicsRigTests;
+			sourceTree = "<group>";
+		};
+		5117B13E2446258A00E4A7C0 /* PSArborTouchSwift */ = {
+			isa = PBXGroup;
+			children = (
+				5117B16E244727FA00E4A7C0 /* ATKernel */,
+				5117B142244625D200E4A7C0 /* Atoms */,
+				5117B143244625DD00E4A7C0 /* ATSupport */,
+				5117B141244625C700E4A7C0 /* Barnes-Hut */,
+				5117B140244625BD00E4A7C0 /* Physics */,
+				5117B13F244625B300E4A7C0 /* System */,
+			);
+			name = PSArborTouchSwift;
+			sourceTree = "<group>";
+		};
+		5117B13F244625B300E4A7C0 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				5117B1622446265800E4A7C0 /* ATSystem.swift */,
+				5117B1652446265900E4A7C0 /* ATSystemParams.swift */,
+				5117B1632446265800E4A7C0 /* ATSystemRenderer.swift */,
+				5117B1642446265900E4A7C0 /* ATSystemState.swift */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		5117B140244625BD00E4A7C0 /* Physics */ = {
+			isa = PBXGroup;
+			children = (
+				5117B15C2446264B00E4A7C0 /* ATEnergy.swift */,
+				5117B15B2446264B00E4A7C0 /* ATParticle.swift */,
+				5117B15D2446264B00E4A7C0 /* ATPhysics.swift */,
+				5117B15A2446264B00E4A7C0 /* ATSpring.swift */,
+			);
+			name = Physics;
+			sourceTree = "<group>";
+		};
+		5117B141244625C700E4A7C0 /* Barnes-Hut */ = {
+			isa = PBXGroup;
+			children = (
+				5117B1562446263E00E4A7C0 /* ATBarnesHutBranch.swift */,
+				5117B1552446263E00E4A7C0 /* ATBarnesHutNode.swift */,
+				5117B1542446263E00E4A7C0 /* ATBarnesHutTree.swift */,
+			);
+			name = "Barnes-Hut";
+			sourceTree = "<group>";
+		};
+		5117B142244625D200E4A7C0 /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+				5117B1442446261600E4A7C0 /* ATEdge.swift */,
+				5117B1462446261600E4A7C0 /* ATNode.swift */,
+				5117B1452446261600E4A7C0 /* UniqueCount.swift */,
+			);
+			name = Atoms;
+			sourceTree = "<group>";
+		};
+		5117B143244625DD00E4A7C0 /* ATSupport */ = {
+			isa = PBXGroup;
+			children = (
+				5117B14C2446262800E4A7C0 /* CGPointExtension.swift */,
+				5117B14A2446262800E4A7C0 /* CGRectExtension.swift */,
+				5117B14B2446262800E4A7C0 /* CGSizeExtension.swift */,
+				5117B14D2446262800E4A7C0 /* CoreGraphicsOperators.swift */,
+				5117B14E2446262800E4A7C0 /* Line.swift */,
+			);
+			name = ATSupport;
+			sourceTree = "<group>";
+		};
+		5117B16E244727FA00E4A7C0 /* ATKernel */ = {
+			isa = PBXGroup;
+			children = (
+				5117B16F2447281000E4A7C0 /* ATKernel.swift */,
+			);
+			name = ATKernel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5117B11724459A4500E4A7C0 /* PhysicsRig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5117B13724459A5200E4A7C0 /* Build configuration list for PBXNativeTarget "PhysicsRig" */;
+			buildPhases = (
+				5117B11424459A4500E4A7C0 /* Sources */,
+				5117B11524459A4500E4A7C0 /* Frameworks */,
+				5117B11624459A4500E4A7C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhysicsRig;
+			productName = PhysicsRig;
+			productReference = 5117B11824459A4500E4A7C0 /* PhysicsRig.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5117B12D24459A5100E4A7C0 /* PhysicsRigTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5117B13A24459A5200E4A7C0 /* Build configuration list for PBXNativeTarget "PhysicsRigTests" */;
+			buildPhases = (
+				5117B12A24459A5100E4A7C0 /* Sources */,
+				5117B12B24459A5100E4A7C0 /* Frameworks */,
+				5117B12C24459A5100E4A7C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5117B13024459A5200E4A7C0 /* PBXTargetDependency */,
+			);
+			name = PhysicsRigTests;
+			productName = PhysicsRigTests;
+			productReference = 5117B12E24459A5100E4A7C0 /* PhysicsRigTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5117B11024459A4500E4A7C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Hovering Above";
+				TargetAttributes = {
+					5117B11724459A4500E4A7C0 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					5117B12D24459A5100E4A7C0 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 5117B11724459A4500E4A7C0;
+					};
+				};
+			};
+			buildConfigurationList = 5117B11324459A4500E4A7C0 /* Build configuration list for PBXProject "PhysicsRig" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5117B10F24459A4500E4A7C0;
+			productRefGroup = 5117B11924459A4500E4A7C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5117B11724459A4500E4A7C0 /* PhysicsRig */,
+				5117B12D24459A5100E4A7C0 /* PhysicsRigTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5117B11624459A4500E4A7C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5117B12824459A5100E4A7C0 /* LaunchScreen.storyboard in Resources */,
+				5117B12524459A5100E4A7C0 /* Assets.xcassets in Resources */,
+				5117B12324459A4500E4A7C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5117B12C24459A5100E4A7C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5117B11424459A4500E4A7C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5117B1492446261600E4A7C0 /* ATNode.swift in Sources */,
+				5117B1482446261600E4A7C0 /* UniqueCount.swift in Sources */,
+				5117B1602446264B00E4A7C0 /* ATEnergy.swift in Sources */,
+				5117B1502446262800E4A7C0 /* CGSizeExtension.swift in Sources */,
+				5117B15E2446264B00E4A7C0 /* ATSpring.swift in Sources */,
+				5117B1692446265900E4A7C0 /* ATSystemParams.swift in Sources */,
+				5117B15F2446264B00E4A7C0 /* ATParticle.swift in Sources */,
+				5117B1702447281000E4A7C0 /* ATKernel.swift in Sources */,
+				5117B1612446264B00E4A7C0 /* ATPhysics.swift in Sources */,
+				5117B16B24462ADF00E4A7C0 /* ATPhysicsDebugView.swift in Sources */,
+				5117B1662446265900E4A7C0 /* ATSystem.swift in Sources */,
+				5117B1592446263E00E4A7C0 /* ATBarnesHutBranch.swift in Sources */,
+				5117B1582446263E00E4A7C0 /* ATBarnesHutNode.swift in Sources */,
+				5117B12024459A4500E4A7C0 /* ViewController.swift in Sources */,
+				5117B14F2446262800E4A7C0 /* CGRectExtension.swift in Sources */,
+				5117B1572446263E00E4A7C0 /* ATBarnesHutTree.swift in Sources */,
+				5117B1472446261600E4A7C0 /* ATEdge.swift in Sources */,
+				5117B11C24459A4500E4A7C0 /* AppDelegate.swift in Sources */,
+				5117B1522446262800E4A7C0 /* CoreGraphicsOperators.swift in Sources */,
+				5117B11E24459A4500E4A7C0 /* SceneDelegate.swift in Sources */,
+				5117B1532446262800E4A7C0 /* Line.swift in Sources */,
+				5117B1672446265900E4A7C0 /* ATSystemRenderer.swift in Sources */,
+				5117B1512446262800E4A7C0 /* CGPointExtension.swift in Sources */,
+				5117B1682446265900E4A7C0 /* ATSystemState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5117B12A24459A5100E4A7C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5117B13324459A5200E4A7C0 /* PhysicsRigTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5117B13024459A5200E4A7C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5117B11724459A4500E4A7C0 /* PhysicsRig */;
+			targetProxy = 5117B12F24459A5200E4A7C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5117B12124459A4500E4A7C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5117B12224459A4500E4A7C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5117B12624459A5100E4A7C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5117B12724459A5100E4A7C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5117B13524459A5200E4A7C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5117B13624459A5200E4A7C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5117B13824459A5200E4A7C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4FXMVWJ7V;
+				INFOPLIST_FILE = PhysicsRig/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sivas.hoveringabove.PhysicsRig;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5117B13924459A5200E4A7C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4FXMVWJ7V;
+				INFOPLIST_FILE = PhysicsRig/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sivas.hoveringabove.PhysicsRig;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5117B13B24459A5200E4A7C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4FXMVWJ7V;
+				INFOPLIST_FILE = PhysicsRigTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sivas.hoveringabove.PhysicsRigTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhysicsRig.app/PhysicsRig";
+			};
+			name = Debug;
+		};
+		5117B13C24459A5200E4A7C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4FXMVWJ7V;
+				INFOPLIST_FILE = PhysicsRigTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sivas.hoveringabove.PhysicsRigTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhysicsRig.app/PhysicsRig";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5117B11324459A4500E4A7C0 /* Build configuration list for PBXProject "PhysicsRig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5117B13524459A5200E4A7C0 /* Debug */,
+				5117B13624459A5200E4A7C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5117B13724459A5200E4A7C0 /* Build configuration list for PBXNativeTarget "PhysicsRig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5117B13824459A5200E4A7C0 /* Debug */,
+				5117B13924459A5200E4A7C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5117B13A24459A5200E4A7C0 /* Build configuration list for PBXNativeTarget "PhysicsRigTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5117B13B24459A5200E4A7C0 /* Debug */,
+				5117B13C24459A5200E4A7C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5117B11024459A4500E4A7C0 /* Project object */;
+}
